@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argem Edebiyat</title>
+    <style>
+        @import url('./base.css');
+        @import url('./photo.css');
+    </style>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="photo.css">
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
+
+
+</head>
+<body>
+    <navbar>
+        <ul>
+        <div>
+          
+    
+          <div class="d-flex justify-content-center">
+          <li><a href="index.html"><i class="fas fa-home" style="font-size:3rem"></i><br>Ana Sayfa</a></li>
+          <li><a href="hakkımızda.html"><i class="fa fa-address-card" style="font-size:3rem"></i><br>Hakkımızda</a>
+            <div class="navbar">
+              <div class="d-flex justify-content-center"><a href="#">Yazarlarımız</a></div>
+              <div class="d-flex justify-content-center"><a href="#">WebSite Ekibimiz</a></div>
+              <div class="d-flex justify-content-center"><a href="#">Editörlerimiz</a></div>
+            </div></li>
+            <li><a href="edebiyat.html"><i class="fas fa-feather-alt" style="font-size:3rem"></i><br>Edebiyat</a>
+    
+          <div class="navbar2">
+                <div class="d-flex justify-content-center"><a href="#">Şiirler</a></div>
+                <div class="d-flex justify-content-center"><a href="#">Denemeler</a></div>
+                <div class="d-flex justify-content-center"><a href="#">Biyografiler</a></div>
+    
+    
+    
+                <div class="d-flex justify-content-center"><a href="#">Dergi</a></div>
+                <div class="d-flex justify-content-center"><a href="#">Köşe Yazısı</a></div>
+                <div class="d-flex justify-content-center"><a href="#">Gezi Yazısı</a></div>
+    
+                <div class="d-flex justify-content-center"><a href="#">Makale</a></div>
+                <div class="d-flex justify-content-center"><a href="#">Masal</a></div>
+                <div class="d-flex justify-content-center"><a href="#">Mektup</a></div>
+    
+                <div class="d-flex justify-content-center"><a href="#">Eleştiri</a></div>
+                <div class="d-flex justify-content-center"><a href="#">Hikaye</a></div>
+              </div>
+            </li>
+          <li><a href="#contact"><i class="fa fa-music" style="font-size:3rem"></i><br>Müzikler</a>
+            <div class="navbar3">
+              <div class="d-flex justify-content-center"><a href="#">Dünya Müziği</a></div>
+              <div class="d-flex justify-content-center"><a href="#">Türk Müziği</a></div>
+              <div class="d-flex justify-content-center"><a href="#">Film Müzikleri</a></div>
+            </div>
+          </li>
+          <li><a href="photo.html"><i class="fas fa-images" style="font-size:3rem"></i><br>Fotoğraflar</a>
+            <div class="navbar4">
+              <div class="d-flex justify-content-center"><a href="#">İzlenimler</a></div>
+              <div class="d-flex justify-content-center"><a href="#">Portreler</a></div>
+    
+            </div></li>
+          <li><a href="#about"><i class="fas fa-book-reader" style="font-size:3rem"></i><br>Kütüphane</a>
+              <div class="navbar5">
+                <div class="d-flex justify-content-center"><a href="#">Tavsiyeler</a></div>
+                <div class="d-flex justify-content-center"><a href="#">E-kitaplar</a></div>
+    
+           </div></li>
+           </div>
+        </ul>
+      </navbar>
+      <div class="photo-grid">
+        <div class="card card-tall" style="background-image: url('https://images.unsplash.com/photo-1512873676263-8d849b4971de?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80')">
+          1
+        </div>
+        <div class="card card-tall" style="background-image: url('https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8aG91c2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+          2
+        </div>
+        <div class="card card-tall" style="background-image: url('https://images.unsplash.com/photo-1552053831-71594a27632d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=612&q=80')">
+          3
+        </div>
+        <div class="card card-wide" style="background-image: url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80')">
+            4
+        </div>
+        <div class="card card-wide" style="background-image: url('https://images.unsplash.com/photo-1518443855757-dfadac7101ae?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8d29sZnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+            5
+        </div>
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3F1YXJlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+            6
+        </div>
+        <div class="card" style="background-image: url('https://images.unsplash.com/photo-1608813528399-8748f738a1df?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+            7
+        </div>
+        <div class="card card-tall" style="background-image: url('https://images.unsplash.com/photo-1609005870928-3fb5409180c0?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60')">
+            8
+        </div>
+      <!-- Add more items here  -->
+  
+      </div>
+  
+</body>
+</html>

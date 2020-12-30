@@ -1,1 +1,1 @@
-# ArgemDergisiYeni
+# ArgemDergi
