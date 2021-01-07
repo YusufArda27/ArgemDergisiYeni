@@ -9,9 +9,11 @@
 body{
   background-color: #E9E5DD
 }
-
+h3, h5 {
+  color:#ececec
+}
 .navbar {
-  z-index: 99999;
+  z-index:9999;
   height: auto;
   width: 7.2rem;
   position: fixed;
@@ -21,19 +23,18 @@ body{
   background-color: #D04925;
   transition: height 600ms ease;
 }
-h5, h3{
-  color: #e8e8e8;
-}
+
 li:hover .navbar{
-  display: block;
+  z-index:9999;
+  display: 7.2rem;
   height: auto;
-  width: auto;
+  widht: auto;
 
 
 
 }
 .navbar2 {
-  z-index: 99999;
+  z-index:9999;
   height: auto;
   width: 6rem;
   position: fixed;
@@ -45,15 +46,16 @@ li:hover .navbar{
 }
 
 li:hover .navbar2{
+  z-index:9999;
   display: block;
   height: auto;
-  width: auto;
+  widht: 6rem;
 
 
 
 }
 .navbar3 {
-  z-index: 99999;
+  z-index:9999;
   height: auto;
   width: 5.9rem;
   position: fixed;
@@ -65,15 +67,16 @@ li:hover .navbar2{
 }
 
 li:hover .navbar3{
+  z-index:9999;
   display: block;
   height: auto;
-  width: auto;
+  widht: 5.9rem;
 
 
 
 }
 .navbar4 {
-  z-index: 99999;
+  z-index:9999;
   height: auto;
   width: 7rem;
   position: fixed;
@@ -85,15 +88,16 @@ li:hover .navbar3{
 }
 
 li:hover .navbar4{
+  z-index:9999;
   display: block;
   height: auto;
-  width: auto;
+  widht:7rem;
 
 
 
 }
 .navbar5 {
-  z-index: 99999;
+  z-index:9999;
   height: auto;
   width: 6.9rem;
   position: fixed;
@@ -105,9 +109,10 @@ li:hover .navbar4{
 }
 
 li:hover .navbar5{
+  z-index:9999;
   display: block;
   height: auto;
-  width: auto;
+  widht: 6.9rem;
 
 
 
@@ -143,12 +148,16 @@ li a {
   transition: display 200ms;
 }
 */
-#card{
-  margin-top: 1rem;
-}
+
 li a:hover {
   color: #D4CECC;
   background-color: #E56E4E;
+}
+
+/*
+li:hover .dropdown-content {
+  display:block;
+
 }
 main{
   margin-top: 1rem;
