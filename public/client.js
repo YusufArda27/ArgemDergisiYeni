@@ -19,8 +19,15 @@ ref.on("value",gotData,gotError);
 function gotData(data){
   var write = data.val();
   var keys = Object.keys(write)
+  let KeyIndexes=[-1,-2,-3];
   for (var i = 0;i < 3; i++){
-    var k = keys[Math.Random()*Object.keys(write).length];
+    var kindex=Math.Random()*Object.keys(write).length;
+    while(kindex in KeyIndexes)
+    {
+          kindex=Math.Random()*Object.keys(write).length;
+    }
+    var k = keys[kindex];
+    KeyIndexes[i]=kindex;
     console.log(write[k].Yazı)
     var context_to = ".context"+i
     var text_to = ".content"+i
