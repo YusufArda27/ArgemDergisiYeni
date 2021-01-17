@@ -20,14 +20,14 @@ function gotData(data){
   var write = data.val();
   var keys = Object.keys(write)
   for (var i = 0;i < 3; i++){
-    var kindex=Object.keys(write).length-i;
-    var k = keys[kindex];
+    var ki = keys.length-i-1
+    console.log(ki)
+    var k = keys[ki];
   
-    console.log(write[k].Yazı)
     var context_to = ".context"+i
     var text_to = ".content"+i
     var title_to = ".title"+i
-    console.log(text_to)
+   
     $(text_to).text(write[k].Yazı)
     $(title_to).text(write[k].YazıAdı)
     $(context_to).text(write[k].YazıKategorisi)
