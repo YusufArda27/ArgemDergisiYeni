@@ -24,7 +24,7 @@ function gotData(data){
     console.log(ki)
     var k = keys[ki];
     console.log(write[k].Yazı)
-    var context_to = ".context"+i
+    var context_to = "#context"+i
     var text_to = ".content"+i
     var title_to = ".title"+i
     console.log(text_to)

@@ -24,13 +24,14 @@ function gotData(data){
     console.log(ki)
     var k = keys[ki];
   
-    var context_to = ".context"+i
+    var context_to = "#context"+i
     var text_to = ".content"+i
     var title_to = ".title"+i
-   
+    var author_to = "#author"+i
     $(text_to).text(write[k].Yazı)
     $(title_to).text(write[k].YazıAdı)
     $(context_to).text(write[k].YazıKategorisi)
+    $(author_to).text(write[k].YazarAdı)
   }
 }
 
